@@ -1,0 +1,41 @@
+.btn{
+    border: 1px solid rgb(136, 24, 4);
+    background-color:transparent;
+    color: white;
+  
+    padding: 8px 12px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: tomato;
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+  transform: translate(0px);
+  transition-duration: 500ms;
+    transition-timing-function: ease;
+    z-index: -1;
+    transform-origin: right top;
+  }
+  .btn:hover{
+    /* transform: scale(1.1); */
+    color: tomato;
+    border: 1px solid tomato;
+  
+  
+  }
+  .btn:hover:after{
+    transform: rotateX(30deg);
+    /* transform: translate(83px); */
+    
+  }

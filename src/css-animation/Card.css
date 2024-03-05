@@ -1,0 +1,32 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  .main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    width: 500px;
+    background: tomato;
+    padding: 20px;
+    border-radius: 8px;
+    clip-path: circle(6% at 92% 25%);
+    transition: 800ms;
+  transition-timing-function: ease-in-out
+  
+  }
+  .card:hover{
+    clip-path: circle(120.6% at 51% 50%);
+  }
+
+  /*<div className='card'>
+  <h1>Heating</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis laudantium minima rerum numquam voluptas tempora itaque, voluptates reiciendis libero iure at nam aliquam molestiae quos aut sed repellendus delectus vitae.</p>
+</div>
+  */

@@ -1,0 +1,80 @@
+
+.main{
+  
+    display: flex;
+  flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+   margin-left: 500px;
+    /* overflow: hidden;
+    position: relative; */
+  
+  
+  }
+  .box-2-container{
+    /* overflow: hidden; */
+    height: 150px;
+    width: 150px;
+    /* position: relative; */
+    perspective: 1000px;
+  }
+  
+  .box-1{
+    /* position: absolute; */
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    transition-duration: 500ms;
+  transition-timing-function: ease;
+  margin-bottom: 20px;
+  }
+  .box-2{
+    /* position: absolute; */
+    background-color: green;
+    height: 150px;
+    width: 150px;
+    transition-duration: 1000ms;
+    transition-timing-function:ease ;
+    /* transform-origin: bottom right ; */
+  }
+  /* .box-2:hover{
+    transform: rotate(180deg);
+  } */
+  /* .box-1:hover{
+    transform: translateY(150px);
+  } */
+  /* .box-1:hover{
+    transform: skew(45deg,20deg);
+  } */
+  .box-2:hover{
+    transform:rotateX(70deg)
+  }
+  /* .box-2:hover{
+    transform: translateZ(100px)
+  } */
+  /* //////////////////////////////////////////////////// */
+  .main{
+    padding-left: 100px;
+  }
+  
+  .box-1{
+    /* position: absolute; */
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    animation-name: moving;
+    animation-duration: 1000ms;
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes moving {
+    from{
+      transform: translate(0);
+    }
+    to{
+      transform: translate(500px);
+    }
+  }
+  
